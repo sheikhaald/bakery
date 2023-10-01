@@ -1,7 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import bakeries from "./products";
 
 function App() {
+  const bakerymenu = bakeries.map((bakery) => {
+    return (
+      <div className="bake">
+        <h1>{bakery.name}</h1>
+        <h2>{bakery.price}</h2>
+        <img src={bakery.image} width="250px" />
+      </div>
+    );
+  });
+
   return (
     <div className="logo">
       <h1>MY Pink Bakery</h1>
@@ -13,6 +23,7 @@ function App() {
           alt="logo"
         />
       </header>
+      {bakerymenu}
     </div>
   );
 }

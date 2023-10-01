@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.bake {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
